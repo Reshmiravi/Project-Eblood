@@ -1,0 +1,104 @@
+{%  extends 'temp/studenthome.html' %}
+{%  block base %}
+	<h1 align="center"><u>MANAGE PROFILE</u></h1>
+    <br>
+	<form method="post">
+	<table align="center">
+
+		<tr>
+            <td></td>
+			<td>Username</td>
+			<td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="user"></td>
+		</tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+		<tr>
+            <td></td>
+			<td>Password</td>
+			<td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="password"name="pass"></td>
+		</tr>
+		<td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+		<tr>
+            <td></td>
+			<td>Full Name</td>
+			<td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="name"></td>
+		</tr>
+		<td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+            <td></td>
+			<td>Email Id</td>
+			<td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="mail"></td>
+		</tr>
+		<td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+		<tr>
+            <td></td>
+			<td>Gender</td>
+			<td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="gender"></td>
+		</tr>
+
+		<td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+		<tr>
+            <td></td>
+			<td>Phone No</td>	
+			<td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="num"></td>
+		</tr>
+		<td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+		<tr>
+            <td></td>
+			<td>Whatsapp No</td>
+			<td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="watsp"></td>
+		</tr>
+		<td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+		<tr>
+            <td></td>
+			<td>Course</td>
+			<td>&nbsp&nbsp&nbsp&nbsp&nbsp<textarea cols="21" row="5" name="course"></textarea></td>
+		</tr>
+		<td></td></tr><tr><td></td></tr><tr><td></td></tr>
+		<tr>
+            <td></td>
+			<td>Address</td>
+			<td>&nbsp&nbsp&nbsp&nbsp&nbsp<textarea cols="21" row="10" name="address"></textarea></td>
+		</tr>	
+		<td></td></tr><tr><td></td></tr><tr><td></td></tr>
+		<tr>
+            <td></td>
+			<td>Age</td>
+			<td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="age"></td>
+		</tr>
+		<td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+		<tr>
+            <td></td>
+			<td>Blood Type</td>
+			<td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="blood"></td>
+		</tr>
+		<td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+		<tr>
+            <td></td>
+			<td>Weight</td>
+			<td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="weight"></td>
+		</tr>
+		<td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+		<tr>
+            <td></td>
+			<td>Diagnosed With Any Disease</td>
+		<td>&nbsp&nbsp&nbsp&nbsp&nbsp<textarea cols="21" row="10" name="disease"></textarea></td>
+		</tr>
+        <tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>
+        <tr>
+            <td></td>
+			<td>Last Date Of Donation</td>
+			<td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="dona"></td>
+		</tr>
+		<td></td></tr><tr><td></td></tr><tr><td></td></tr>
+		<tr>
+            <td align="right"><input type="submit" name="hide" value="Hide" class="btn btn-success"></td>
+
+			<td align="center">&nbsp&nbsp<input type="submit" name="unhide" value="Un-hide" class="btn btn-success"></td>
+			
+			<td align="center"><input type="submit" name="update" value="Update" class="btn btn-success"></td>
+
+			<td align="left"><input type="submit" name="delete" value="Delete" class="btn btn-success"></td>
+		</tr>
+
+	</table>
+</form>
+
+{%  endblock %}

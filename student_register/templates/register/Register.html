@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register</title>
+</head>
+<body>
+<h1 align="center"><u>REGISTRATION</u></h1>
+<form method="POST">
+    {% csrf_token %}
+	<table class="table table-bordered text-center" align="center">
+		<tr>
+			<td>Username</td>
+			<td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="user" placeholder="Username"></td>
+		</tr><tr></tr>
+		<tr>
+			<td>Password</td>
+			<td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="password" placeholder="password" name="pass"></td>
+		</tr>
+		<tr></tr>
+		<tr>
+			<td>Full Name</td>
+			<td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="name" placeholder="name"></td>
+		</tr>
+		<tr></tr><tr>
+			<td>Email Id</td>
+			<td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="mail" placeholder="email id"></td>
+		</tr>
+		<tr></tr>
+		<tr>
+			<td>Gender</td>
+			<td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="gender" value="male">Male&nbsp&nbsp
+			<input type="radio" name="gender" value="female">Female</td>
+		</tr>
+		<tr></tr>
+		<tr>
+			<td>Phone No</td>	
+			<td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="num" placeholder="phone no"></td>
+		</tr>
+		<tr></tr>
+		<tr>
+			<td>Whatsapp No</td>
+			<td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="watsp" placeholder="whatsapp no"></td>
+		</tr>
+		<tr></tr>
+		<tr>
+			<td>Course</td>
+			<td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="course" placeholder="course name"></td>
+		</tr>
+		<tr></tr>
+		<tr>
+			<td>Address</td>
+			<td>&nbsp&nbsp&nbsp&nbsp&nbsp<textarea cols="21" row="10" name="address" placeholder="address"></textarea></td>
+		</tr>
+		<tr></tr>
+		<tr>
+			<td>Age</td>
+			<td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="age" placeholder="age"></td>
+		</tr>
+		<tr></tr>
+		<tr>
+			<td>Blood Type</td>
+			<td>&nbsp&nbsp&nbsp&nbsp&nbsp<select name="blood">
+				<option value="a+">A+ve</option>
+				<option value="a-">A-ve</option>
+				<option value="b+">B+ve</option>
+				<option value="b-">B-ve</option>
+				<option value="ab+">AB+ve</option>
+				<option value="ab-">AB-ve</option>
+				<option value="o+">O+ve</option>
+				<option value="o-">O-ve</option>
+				</select>
+			</td>
+		</tr>
+		<tr></tr>
+		<tr>
+			<td>Weight</td>
+			<td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="weight" placeholder="weight"></td>
+		</tr>
+		<tr></tr>
+		<tr>
+			<td>Diagnosed With Any Disease</td>
+			<td>&nbsp&nbsp&nbsp&nbsp<input type="checkbox" name="diag" value="dia"/>
+				<label>Yes</label>
+				<input type="checkbox" name="diag" value="dia"/>
+				<label>No</label>
+			</td>
+		</tr>
+		<tr></tr>
+		<tr>
+			<td>Last Date Of Donation</td>
+			<td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="dona" placeholder="date"></td>
+		</tr>
+		<tr></tr>
+		<tr>
+			<td></td>
+			<td align="left"><input type="submit" name="register" value="Register" class="btn btn-success"></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
