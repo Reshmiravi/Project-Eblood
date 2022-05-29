@@ -1,0 +1,29 @@
+{% extends 'temp/adminhome.html' %}
+{%  block base %}
+	<h1 align="center"><u>REQUEST</u></h1>
+{#	<form method="POST">#}
+		<table class="table table-bordered text-center" align="center">
+			<tr>
+				<td>Institute Name</td>
+				<td>Type</td>
+				<td>Location</td>
+                <td>Blood Type</td>
+				<td>Action</td>
+			</tr>
+            {% for x in obv %}
+			<tr>
+                <td>{{ x.hb_id }}</td>
+                <td>{{ x.type }}</td>
+                <td>{{ x.location }}</td>
+                <td>{{ x.blood_id }}</td>
+				 <td>
+                     <a href="{% url 'add_notify' idd=x.req_id %}">Send</a><br>
+				 	<a href="{% url 'delete' idd=x.req_id %}">Delete</a><br>
+				 </td>
+
+			</tr>
+            {% endfor %}
+		</table>
+{#	</form>#}
+
+{% endblock %}

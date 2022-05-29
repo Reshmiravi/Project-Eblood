@@ -1,0 +1,29 @@
+{%  extends 'temp/studenthome.html' %}
+{% block base %}
+	<h1 align="center"><u>NOTIFICATION</u></h1>
+    <br>
+{#	<form method="post">#}
+		<table class="table table-bordered text-center" align="center">
+
+			<tr>
+				<td>Notification</td>
+				<td>Date</td>
+				<td>Time</td>
+				<td align="center">Action</td>
+			</tr>
+			<tr></tr>
+              {%  for i in ob1 %}
+			<tr>
+				<td>{{ i.notification }}</td>
+                <td>{{ i.date }}</td>
+                <td>{{ i.time }}</td>
+				<td>
+					<a href="">Accept</a>&nbsp&nbsp&nbsp
+					<a href="">Reject</a>
+				</td>
+			</tr>
+            {% endfor %}
+		</table>
+{#	</form>#}
+
+{% endblock %}

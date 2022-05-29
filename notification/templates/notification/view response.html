@@ -1,0 +1,25 @@
+{% extends 'temp/adminhome.html' %}
+{% block base %}
+	<h1 align="center"><u>RESPONSE</u></h1>
+	<form method="post">
+		<table class="table table-bordered text-center" align="center">
+
+			<tr>
+				<td>Student Name</td>
+				<td>Notificaton</td>
+				<td>Response</td>
+				<td>Action</td>
+			</tr>
+            {% for x in obj1 %}
+            <tr>
+                <td>{{ x.stud_id}}</td>
+                <td>{{ x.notification }}</td>
+                <td>{{ x.status }}</td>
+                <td><a href="">Delete</a></td>
+            </tr>
+            {% endfor %}
+		</table>
+	</form>
+
+
+{% endblock %}

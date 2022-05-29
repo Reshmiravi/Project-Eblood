@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>request</title>
+</head>
+<body>
+	<h1 align="center"><u>REQUEST</u></h1>
+	<form method="post">
+    {% csrf_token %}
+		<table align="center">
+			<tr></tr><tr>
+				<td>Name of Institutue</td>
+				<td><select name="ins">
+                    {% for x in obb %}
+                    <option value="{{ x.hb_id }}">{{ x.name_of_institute }} </option>
+                {% endfor %}
+                </select></td>
+			</tr><tr></tr>
+            <tr></tr><tr>
+				<td>Type of Institute</td>
+				<td><select name="typ">
+                    {% for a in obb %}
+                    <option value="{{ a.type_of_institute}}">{{ a.type_of_institute }} </option>
+                {% endfor %}
+                </select></td>
+			</tr><tr></tr>
+			<tr>
+                <td>Blood Type</td>
+			<td><select name="blood">
+                {% for y in obval %}
+				<option value="{{ y.blood_id }}">{{ y.blood_type }}</option>
+                {% endfor %}
+                </select></td>
+		    </tr>
+            <tr>
+				<td>Location</td>
+				<td><select name="loc">
+                    {% for c in obb %}
+                    <option value="{{ c.location }}">{{ c.location }} </option>
+                {% endfor %}
+                </select></td>
+			</tr>
+			<tr></tr>
+			<tr><td></td>
+				<td align="left"><input type="submit" name="sub" value="Add"></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>
